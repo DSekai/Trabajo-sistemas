@@ -155,6 +155,7 @@ namespace Taller_DiseñoSistemas
                     Form_principal f = new Form_principal();
 
                     f.Show();
+
                     f.label2.Text = "Admin";
 
                     this.Close();

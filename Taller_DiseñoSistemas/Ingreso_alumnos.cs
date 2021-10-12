@@ -102,7 +102,7 @@ namespace Taller_DiseñoSistemas
                 fila = dataGridView1.CurrentRow.Index.ToString();
 
                 id = dataGridView1.Rows[Int32.Parse(fila)].Cells[0].Value.ToString();
-                txtrut.Text = dataGridView1.Rows[Int32.Parse(fila)].Cells[0].Value.ToString();
+                //txtrut.Text = dataGridView1.Rows[Int32.Parse(fila)].Cells[0].Value.ToString();
                 
             }
             catch (NullReferenceException)
