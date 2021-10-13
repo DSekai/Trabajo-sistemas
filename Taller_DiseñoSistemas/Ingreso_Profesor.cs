@@ -90,10 +90,21 @@ namespace Taller_DiseñoSistemas
         {
             try
             {
+                String nombre, apellido, direc, cargo;
                 string fila;
                 fila = dataGridView1.CurrentRow.Index.ToString();
 
                 id = dataGridView1.Rows[Int32.Parse(fila)].Cells[0].Value.ToString();
+                nombre = dataGridView1.Rows[Int32.Parse(fila)].Cells[1].Value.ToString();
+                apellido = dataGridView1.Rows[Int32.Parse(fila)].Cells[2].Value.ToString();  
+                direc = dataGridView1.Rows[Int32.Parse(fila)].Cells[3].Value.ToString();
+                cargo = dataGridView1.Rows[Int32.Parse(fila)].Cells[4].Value.ToString();
+                txtnombre.Text = nombre;
+                txtrut.Text = id;
+                txtapellido.Text = apellido;
+                txtdirec.Text = direc;
+                txtcargo.Text = cargo;
+                //txtrut.Text = dataGridView1.Rows[Int32.Parse(fila)].Cells[0].Value.ToString();
 
             }
             catch (NullReferenceException)
