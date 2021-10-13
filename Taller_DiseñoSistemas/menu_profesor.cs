@@ -43,5 +43,10 @@ namespace Taller_DiseñoSistemas
         {
             this.CenterToScreen();
         }
+
+        private void bunifuButton23_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

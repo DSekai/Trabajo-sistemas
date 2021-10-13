@@ -204,6 +204,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\notas.cs" />
     <Compile Include="Class\profesores.cs" />
     <Compile Include="Class\alumnos.cs" />
     <Compile Include="Class\Conexion.cs" />

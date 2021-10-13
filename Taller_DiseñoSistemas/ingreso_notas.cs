@@ -21,13 +21,15 @@ namespace Taller_DiseñoSistemas
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             //cargar_alumnos2();
+            cargar_alumnos();
         }
 
         private void cargar_alumnos()
         {
-            DataTable infoalumnos = new DataTable();
-            alumnos datosalumnos = new alumnos();
-            //infoalumnos = datosalumnos.ConsultarAlumnos
+            DataTable infonotas = new DataTable();
+            notas datosnotas = new notas();
+            infonotas = datosnotas.ConsultarNotas();
+            dataGridView1.DataSource = infonotas;
         }
 
         private void ingreso_notas_Load(object sender, EventArgs e)
