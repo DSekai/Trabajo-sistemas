@@ -17,6 +17,28 @@ namespace Taller_DiseñoSistemas
             InitializeComponent();
         }
 
+
+        private Form formactivado = null;
+
+        private void AbrirForm(Form FormHijo)
+        {
+            if (formactivado != null)
+                formactivado.Close();
+            formactivado = FormHijo;
+
+            FormHijo.TopLevel = false;
+            //FormHijo.Parent = Wrapper;
+
+            //FormHijo.Location = new Point((Wrapper.Width - FormHijo.Width) / 2, (Wrapper.Height - FormHijo.Height) / 2);
+
+            FormHijo.Dock = DockStyle.Fill;
+            Wrapper.Controls.Add(FormHijo);
+            Wrapper.Tag = FormHijo;
+            FormHijo.BringToFront();
+            FormHijo.Show();
+        }
+
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿Desea Salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
@@ -42,11 +64,12 @@ namespace Taller_DiseñoSistemas
         private void menu_profesor_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
+            this.CenterToParent();
         }
 
         private void bunifuButton23_Click(object sender, EventArgs e)
         {
-
+            AbrirForm(new ingreso_notas());
         }
     }
 }

@@ -18,10 +18,21 @@ namespace Taller_DiseñoSistemas
             InitializeComponent();
         }
 
+        private void limpiar()
+        {
+            txtnombre.Text = "";
+            txtnota1.Text = "";
+            txtrut.Text = "";
+            txtnota2.Text = "";
+            txtnota3.Text = "";
+            txtnota4.Text = "";
+            txtnota5.Text = "";
+        }
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             //cargar_alumnos2();
-            cargar_alumnos();
+            
         }
 
         private void cargar_alumnos()
@@ -34,7 +45,48 @@ namespace Taller_DiseñoSistemas
 
         private void ingreso_notas_Load(object sender, EventArgs e)
         {
+            this.CenterToScreen();
+            cargar_alumnos();
+            
+        }
 
+        private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dataGridView1.ClearSelection();
+            limpiar();
+        }
+
+        string id;
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                String nombre, nota1, nota2, nota3, nota4, nota5;
+                string fila;
+                fila = dataGridView1.CurrentRow.Index.ToString();
+
+                id = dataGridView1.Rows[Int32.Parse(fila)].Cells[0].Value.ToString();
+                nombre = dataGridView1.Rows[Int32.Parse(fila)].Cells[1].Value.ToString();
+                nota1 = dataGridView1.Rows[Int32.Parse(fila)].Cells[2].Value.ToString();
+                nota2 = dataGridView1.Rows[Int32.Parse(fila)].Cells[3].Value.ToString();
+                nota3 = dataGridView1.Rows[Int32.Parse(fila)].Cells[4].Value.ToString();
+                nota4 = dataGridView1.Rows[Int32.Parse(fila)].Cells[5].Value.ToString();
+                nota5 = dataGridView1.Rows[Int32.Parse(fila)].Cells[5].Value.ToString();
+                txtnombre.Text = nombre;
+                txtrut.Text = id;
+                txtnota1.Text = nota1;
+                txtnota2.Text = nota2;
+                txtnota3.Text = nota3;
+                txtnota4.Text = nota4;
+                txtnota5.Text = nota5;
+                txtrut.Text = dataGridView1.Rows[Int32.Parse(fila)].Cells[0].Value.ToString();
+
+            }
+            catch (NullReferenceException)
+            {
+                //MessageBox.Show("Seleccione fila correcta");
+            }
         }
     }
 }
