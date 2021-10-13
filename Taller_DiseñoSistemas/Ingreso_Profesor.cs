@@ -13,9 +13,9 @@ using Taller_DiseñoSistemas.Class;
 
 namespace Taller_DiseñoSistemas
 {
-    public partial class Form2 : Form
+    public partial class Ingreso_Profesor : Form
     {
-        public Form2()
+        public Ingreso_Profesor()
         {
             InitializeComponent();
         }

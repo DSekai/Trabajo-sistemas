@@ -26,7 +26,7 @@ namespace Taller_DiseñoSistemas
             this.CenterToScreen();
 
             cargar_alumnos();
-         
+
 
         }
 
@@ -98,17 +98,29 @@ namespace Taller_DiseñoSistemas
         {
             try
             {
+                String nombre, apellido, direc, tutor, nacimiento;
                 string fila;
                 fila = dataGridView1.CurrentRow.Index.ToString();
 
                 id = dataGridView1.Rows[Int32.Parse(fila)].Cells[0].Value.ToString();
+                nombre = dataGridView1.Rows[Int32.Parse(fila)].Cells[1].Value.ToString();
+                apellido = dataGridView1.Rows[Int32.Parse(fila)].Cells[2].Value.ToString();
+                nacimiento = dataGridView1.Rows[Int32.Parse(fila)].Cells[3].Value.ToString();
+                direc = dataGridView1.Rows[Int32.Parse(fila)].Cells[4].Value.ToString();
+                tutor = dataGridView1.Rows[Int32.Parse(fila)].Cells[5].Value.ToString();
+                txtnombre.Text = nombre;
+                txtrut.Text = id;
+                txtapellido.Text = apellido;
+                txtdirec.Text = direc;
+                txttutor.Text = tutor;
                 //txtrut.Text = dataGridView1.Rows[Int32.Parse(fila)].Cells[0].Value.ToString();
-                
+
             }
             catch (NullReferenceException)
             {
                 //MessageBox.Show("Seleccione fila correcta");
             }
+
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)

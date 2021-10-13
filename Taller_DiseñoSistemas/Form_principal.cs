@@ -58,7 +58,7 @@ namespace Taller_DiseñoSistemas
 
         private void bunifuButton23_Click(object sender, EventArgs e)
         {
-            AbrirForm(new Form2());
+            AbrirForm(new Ingreso_Profesor());
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)

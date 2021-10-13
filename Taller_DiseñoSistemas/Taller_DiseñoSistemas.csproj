@@ -208,11 +208,11 @@
     <Compile Include="Class\alumnos.cs" />
     <Compile Include="Class\Conexion.cs" />
     <Compile Include="Class\usuarios.cs" />
-    <Compile Include="Form2.cs">
+    <Compile Include="Ingreso_Profesor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Ingreso_Profesor.Designer.cs">
+      <DependentUpon>Ingreso_Profesor.cs</DependentUpon>
     </Compile>
     <Compile Include="Ingreso_alumnos.cs">
       <SubType>Form</SubType>
@@ -264,8 +264,8 @@
     <Compile Include="Registro_asistencia.Designer.cs">
       <DependentUpon>Registro_asistencia.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Ingreso_Profesor.resx">
+      <DependentUpon>Ingreso_Profesor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ingreso_alumnos.resx">
       <DependentUpon>Ingreso_alumnos.cs</DependentUpon>
