@@ -53,5 +53,26 @@ namespace Taller_DiseñoSistemas.Properties {
                 return ((string)(this["gestion_notas2ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;persistsecurityinfo=True;database=gestion_notas")]
+        public string gestion_notas_notas_dropasignatura {
+            get {
+                return ((string)(this["gestion_notas_notas_dropasignatura"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=Eduardo99;persistsecurityinfo=True;databas" +
+            "e=gestion_notas")]
+        public string gestion_notasConnectionString1 {
+            get {
+                return ((string)(this["gestion_notasConnectionString1"]));
+            }
+        }
     }
 }

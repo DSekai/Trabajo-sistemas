@@ -68,6 +68,8 @@ namespace Taller_DiseñoSistemas.Class
 
         }
 
+
+
         public void EliminarAlumnos()
         {
             Conexion connect = new Conexion();
