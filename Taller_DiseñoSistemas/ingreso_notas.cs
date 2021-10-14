@@ -55,7 +55,6 @@ namespace Taller_DiseñoSistemas
         private void ingreso_notas_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'gestion_notasDataSet8.asignatura' Puede moverla o quitarla según sea necesario.
-            this.asignaturaTableAdapter1.Fill(this.gestion_notasDataSet8.asignatura);
 
             this.CenterToScreen();
             cargar_alumnos();
