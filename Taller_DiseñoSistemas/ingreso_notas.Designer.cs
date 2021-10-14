@@ -29,21 +29,20 @@ namespace Taller_DiseñoSistemas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ingreso_notas));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges29 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges30 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties57 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties58 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties59 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties60 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label7 = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.bunifuDropdown1 = new Bunifu.UI.WinForms.BunifuDropdown();
             this.button1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuDropdown2 = new Bunifu.UI.WinForms.BunifuDropdown();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -63,10 +62,29 @@ namespace Taller_DiseñoSistemas
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtrut = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.gestion_notasDataSet4 = new Taller_DiseñoSistemas.gestion_notasDataSet4();
+            this.asignaturaBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.asignaturaTableAdapter3 = new Taller_DiseñoSistemas.gestion_notasDataSet4TableAdapters.asignaturaTableAdapter();
+            this.asignaturaBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.asignaturaTableAdapter4 = new Taller_DiseñoSistemas.gestion_notasDataSet5TableAdapters.asignaturaTableAdapter();
+            this.gestion_notasDataSet6 = new Taller_DiseñoSistemas.gestion_notasDataSet6();
+            this.asignaturaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.asignaturaTableAdapter = new Taller_DiseñoSistemas.gestion_notasDataSet6TableAdapters.asignaturaTableAdapter();
+            this.gestion_notasDataSet8 = new Taller_DiseñoSistemas.gestion_notasDataSet8();
+            this.asignaturaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.asignaturaTableAdapter1 = new Taller_DiseñoSistemas.gestion_notasDataSet8TableAdapters.asignaturaTableAdapter();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestion_notasDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asignaturaBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asignaturaBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestion_notasDataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asignaturaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestion_notasDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asignaturaBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuPanel1
@@ -133,11 +151,11 @@ namespace Taller_DiseñoSistemas
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges1;
+            borderEdges29.BottomLeft = true;
+            borderEdges29.BottomRight = true;
+            borderEdges29.TopLeft = true;
+            borderEdges29.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges29;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.Empty;
@@ -208,8 +226,8 @@ namespace Taller_DiseñoSistemas
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.bunifuDropdown1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.bunifuDropdown2);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -243,50 +261,6 @@ namespace Taller_DiseñoSistemas
             this.label10.TabIndex = 49;
             this.label10.Text = "Asignatura:";
             // 
-            // bunifuDropdown1
-            // 
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuDropdown1.BorderRadius = 1;
-            this.bunifuDropdown1.Color = System.Drawing.Color.Silver;
-            this.bunifuDropdown1.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.bunifuDropdown1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.bunifuDropdown1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuDropdown1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.bunifuDropdown1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.bunifuDropdown1.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.bunifuDropdown1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.bunifuDropdown1.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.bunifuDropdown1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.bunifuDropdown1.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.bunifuDropdown1.FillDropDown = true;
-            this.bunifuDropdown1.FillIndicator = false;
-            this.bunifuDropdown1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuDropdown1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDropdown1.FormattingEnabled = true;
-            this.bunifuDropdown1.Icon = null;
-            this.bunifuDropdown1.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.bunifuDropdown1.IndicatorColor = System.Drawing.Color.DarkGray;
-            this.bunifuDropdown1.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.bunifuDropdown1.IndicatorThickness = 2;
-            this.bunifuDropdown1.IsDropdownOpened = false;
-            this.bunifuDropdown1.ItemBackColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.ItemBorderColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.ItemForeColor = System.Drawing.Color.Black;
-            this.bunifuDropdown1.ItemHeight = 20;
-            this.bunifuDropdown1.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDropdown1.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.ItemTopMargin = 3;
-            this.bunifuDropdown1.Location = new System.Drawing.Point(135, 131);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.Size = new System.Drawing.Size(192, 26);
-            this.bunifuDropdown1.TabIndex = 48;
-            this.bunifuDropdown1.Text = null;
-            this.bunifuDropdown1.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.bunifuDropdown1.TextLeftMargin = 5;
-            // 
             // button1
             // 
             this.button1.AllowAnimations = true;
@@ -306,11 +280,11 @@ namespace Taller_DiseñoSistemas
             this.button1.ColorContrastOnClick = 45;
             this.button1.ColorContrastOnHover = 45;
             this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.button1.CustomizableEdges = borderEdges2;
+            borderEdges30.BottomLeft = true;
+            borderEdges30.BottomRight = true;
+            borderEdges30.TopLeft = true;
+            borderEdges30.TopRight = true;
+            this.button1.CustomizableEdges = borderEdges30;
             this.button1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.button1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.button1.DisabledFillColor = System.Drawing.Color.Empty;
@@ -473,26 +447,26 @@ namespace Taller_DiseñoSistemas
             this.bunifuTextBox2.Modified = false;
             this.bunifuTextBox2.Multiline = false;
             this.bunifuTextBox2.Name = "bunifuTextBox2";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox2.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuTextBox2.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox2.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.Color.White;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox2.OnIdleState = stateProperties4;
+            stateProperties57.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties57.FillColor = System.Drawing.Color.Empty;
+            stateProperties57.ForeColor = System.Drawing.Color.Empty;
+            stateProperties57.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox2.OnActiveState = stateProperties57;
+            stateProperties58.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties58.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties58.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.bunifuTextBox2.OnDisabledState = stateProperties58;
+            stateProperties59.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties59.FillColor = System.Drawing.Color.Empty;
+            stateProperties59.ForeColor = System.Drawing.Color.Empty;
+            stateProperties59.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox2.OnHoverState = stateProperties59;
+            stateProperties60.BorderColor = System.Drawing.Color.Silver;
+            stateProperties60.FillColor = System.Drawing.Color.White;
+            stateProperties60.ForeColor = System.Drawing.Color.Empty;
+            stateProperties60.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox2.OnIdleState = stateProperties60;
             this.bunifuTextBox2.Padding = new System.Windows.Forms.Padding(3);
             this.bunifuTextBox2.PasswordChar = '\0';
             this.bunifuTextBox2.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -638,6 +612,63 @@ namespace Taller_DiseñoSistemas
             this.label9.TabIndex = 53;
             this.label9.Text = "LISTADO DE ALUMNOS Y NOTAS";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DataSource = this.asignaturaBindingSource1;
+            this.comboBox1.DisplayMember = "nombre";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(135, 132);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(124, 21);
+            this.comboBox1.TabIndex = 50;
+            this.comboBox1.ValueMember = "id";
+            // 
+            // gestion_notasDataSet4
+            // 
+            this.gestion_notasDataSet4.DataSetName = "gestion_notasDataSet4";
+            this.gestion_notasDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // asignaturaBindingSource3
+            // 
+            this.asignaturaBindingSource3.DataMember = "asignatura";
+            this.asignaturaBindingSource3.DataSource = this.gestion_notasDataSet4;
+            // 
+            // asignaturaTableAdapter3
+            // 
+            this.asignaturaTableAdapter3.ClearBeforeFill = true;
+            // 
+            // asignaturaTableAdapter4
+            // 
+            this.asignaturaTableAdapter4.ClearBeforeFill = true;
+            // 
+            // gestion_notasDataSet6
+            // 
+            this.gestion_notasDataSet6.DataSetName = "gestion_notasDataSet6";
+            this.gestion_notasDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // asignaturaBindingSource
+            // 
+            this.asignaturaBindingSource.DataMember = "asignatura";
+            this.asignaturaBindingSource.DataSource = this.gestion_notasDataSet6;
+            // 
+            // asignaturaTableAdapter
+            // 
+            this.asignaturaTableAdapter.ClearBeforeFill = true;
+            // 
+            // gestion_notasDataSet8
+            // 
+            this.gestion_notasDataSet8.DataSetName = "gestion_notasDataSet8";
+            this.gestion_notasDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // asignaturaBindingSource1
+            // 
+            this.asignaturaBindingSource1.DataMember = "asignatura";
+            this.asignaturaBindingSource1.DataSource = this.gestion_notasDataSet8;
+            // 
+            // asignaturaTableAdapter1
+            // 
+            this.asignaturaTableAdapter1.ClearBeforeFill = true;
+            // 
             // ingreso_notas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -658,6 +689,13 @@ namespace Taller_DiseñoSistemas
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestion_notasDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asignaturaBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asignaturaBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestion_notasDataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asignaturaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gestion_notasDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asignaturaBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -667,7 +705,6 @@ namespace Taller_DiseñoSistemas
 
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private System.Windows.Forms.Label label7;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private System.Windows.Forms.Panel panel1;
@@ -690,7 +727,18 @@ namespace Taller_DiseñoSistemas
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton button1;
         private Bunifu.UI.WinForms.BunifuDropdown bunifuDropdown2;
         private System.Windows.Forms.Label label10;
-        private Bunifu.UI.WinForms.BunifuDropdown bunifuDropdown1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private gestion_notasDataSet4 gestion_notasDataSet4;
+        private System.Windows.Forms.BindingSource asignaturaBindingSource3;
+        private gestion_notasDataSet4TableAdapters.asignaturaTableAdapter asignaturaTableAdapter3;
+        private System.Windows.Forms.BindingSource asignaturaBindingSource4;
+        private gestion_notasDataSet5TableAdapters.asignaturaTableAdapter asignaturaTableAdapter4;
+        private gestion_notasDataSet6 gestion_notasDataSet6;
+        private System.Windows.Forms.BindingSource asignaturaBindingSource;
+        private gestion_notasDataSet6TableAdapters.asignaturaTableAdapter asignaturaTableAdapter;
+        private gestion_notasDataSet8 gestion_notasDataSet8;
+        private System.Windows.Forms.BindingSource asignaturaBindingSource1;
+        private gestion_notasDataSet8TableAdapters.asignaturaTableAdapter asignaturaTableAdapter1;
     }
 }

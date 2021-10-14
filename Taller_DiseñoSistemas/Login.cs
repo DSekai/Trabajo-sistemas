@@ -145,7 +145,7 @@ namespace Taller_DiseñoSistemas
                         menu_profesor f = new menu_profesor();
 
                         f.Show();
-                        f.label2.Text = txtuser.Text;
+                        f.info.Text = txtuser.Text;
 
                         this.Close();
                     }

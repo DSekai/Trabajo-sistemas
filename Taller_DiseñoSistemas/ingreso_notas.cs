@@ -38,15 +38,28 @@ namespace Taller_DiseñoSistemas
         private void cargar_alumnos()
         {
             DataTable infonotas = new DataTable();
-            notas datosnotas = new notas();
+            notas datosnotas = new notas(label2.Text);
             infonotas = datosnotas.ConsultarNotas();
             dataGridView1.DataSource = infonotas;
         }
 
+        private void cargar_Asignatura()
+        {
+            //DataSet infoasignatura = new DataSet();
+            //notas datosasignatura = new notas("Sekai");
+            //infoasignatura = datosasignatura.ConsultarAsignatura();
+            //bunifuDropdown1.DataSource = infoasignatura;
+
+        }
+
         private void ingreso_notas_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'gestion_notasDataSet8.asignatura' Puede moverla o quitarla según sea necesario.
+            this.asignaturaTableAdapter1.Fill(this.gestion_notasDataSet8.asignatura);
+
             this.CenterToScreen();
             cargar_alumnos();
+            cargar_Asignatura();
             
         }
 

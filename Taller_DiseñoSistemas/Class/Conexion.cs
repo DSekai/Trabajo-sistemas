@@ -66,6 +66,27 @@ namespace Taller_DiseñoSistemas.Class
                 throw;
             }
         }
+
+        public DataSet ConsultaDatos2()
+        {
+            DataSet dt = new DataSet();
+            try
+            {
+                using (conn = new MySqlConnection(connecString))
+                {
+                    conn.Open();
+                    MySqlDataAdapter adapter = new MySqlDataAdapter(this.query, conn);
+                    adapter.Fill(dt);
+
+                    return dt;
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error {0}", ex.Message);
+                throw;
+            }
+        }
     }
 
 
