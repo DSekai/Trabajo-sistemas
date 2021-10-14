@@ -14,6 +14,7 @@ namespace Taller_DiseñoSistemas.Class
         private String apellido;
         private String direccion;
         private String cargo;
+        private int asignatura;
 
         private String valor;
         private int opcion;
@@ -21,13 +22,14 @@ namespace Taller_DiseñoSistemas.Class
         private String rut2;
 
         public profesores(String _rut, String _nombre,String _apellido, 
-            String _direccion, String _cargo)
+            String _direccion, String _cargo, int _asignatura)
         {
             this.rut = _rut;
             this.nombre = _nombre;
             this.apellido = _apellido;
             this.direccion = _direccion;
             this.cargo = _cargo;
+            this.asignatura = _asignatura;
 
         }
 
@@ -47,8 +49,8 @@ namespace Taller_DiseñoSistemas.Class
         {
             Conexion connect = new Conexion();
 
-            String query = String.Format("call sp_ingresar_profesor('{0}','{1}','{2}','{3}','{4}');",
-                this.rut, this.nombre, this.apellido, this.direccion, this.cargo);
+            String query = String.Format("call sp_ingresar_profesor('{0}','{1}','{2}','{3}','{4}','{5}');",
+                this.rut, this.nombre, this.apellido, this.direccion, this.cargo, this.asignatura);
 
             connect.setQuery(query);
 

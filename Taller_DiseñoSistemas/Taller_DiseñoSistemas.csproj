@@ -204,10 +204,22 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\asignaturas.cs" />
     <Compile Include="Class\profesores.cs" />
     <Compile Include="Class\alumnos.cs" />
     <Compile Include="Class\Conexion.cs" />
     <Compile Include="Class\usuarios.cs" />
+    <Compile Include="asignatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="asignatura.Designer.cs">
+      <DependentUpon>asignatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_notasDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestion_notasDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Ingreso_Profesor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +276,9 @@
     <Compile Include="Registro_asistencia.Designer.cs">
       <DependentUpon>Registro_asistencia.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="asignatura.resx">
+      <DependentUpon>asignatura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ingreso_Profesor.resx">
       <DependentUpon>Ingreso_Profesor.cs</DependentUpon>
     </EmbeddedResource>
@@ -301,6 +316,17 @@
     <EmbeddedResource Include="Registro_asistencia.resx">
       <DependentUpon>Registro_asistencia.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="gestion_notasDataSet.xsc">
+      <DependentUpon>gestion_notasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_notasDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestion_notasDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestion_notasDataSet.xss">
+      <DependentUpon>gestion_notasDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

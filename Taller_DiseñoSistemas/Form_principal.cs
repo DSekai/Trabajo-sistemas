@@ -113,5 +113,10 @@ namespace Taller_DiseñoSistemas
 
             l.Show();
         }
+
+        private void bunifuButton25_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new asignatura());
+        }
     }
 }

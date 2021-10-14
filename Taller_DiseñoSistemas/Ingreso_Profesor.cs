@@ -22,9 +22,11 @@ namespace Taller_DiseñoSistemas
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'gestion_notasDataSet.asignatura' Puede moverla o quitarla según sea necesario.
+            this.asignaturaTableAdapter.Fill(this.gestion_notasDataSet.asignatura);
             this.CenterToScreen();
             cargar_profesores();
-         
+
         }
 
         private void cargar_profesores()
@@ -58,7 +60,7 @@ namespace Taller_DiseñoSistemas
             txtapellido.Clear();
             txtdirec.Clear();
             txtcargo.Clear();
-
+            comboBox1.ResetText();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -74,12 +76,15 @@ namespace Taller_DiseñoSistemas
                 String apellido = txtapellido.Text;
                 String direccion = txtdirec.Text;
                 String cargo = txtcargo.Text;
+                int asignatura = Convert.ToInt32(comboBox1.SelectedValue);
 
-                profesores p = new profesores(rut, nombre, apellido, direccion, cargo);
+                profesores p = new profesores(rut, nombre, apellido, direccion, cargo, asignatura);
 
                 p.ingresar_profesor();
 
                 limpiar();
+
+                cargar_profesores();
 
             }
         }
@@ -96,7 +101,7 @@ namespace Taller_DiseñoSistemas
 
                 id = dataGridView1.Rows[Int32.Parse(fila)].Cells[0].Value.ToString();
                 nombre = dataGridView1.Rows[Int32.Parse(fila)].Cells[1].Value.ToString();
-                apellido = dataGridView1.Rows[Int32.Parse(fila)].Cells[2].Value.ToString();  
+                apellido = dataGridView1.Rows[Int32.Parse(fila)].Cells[2].Value.ToString();
                 direc = dataGridView1.Rows[Int32.Parse(fila)].Cells[3].Value.ToString();
                 cargo = dataGridView1.Rows[Int32.Parse(fila)].Cells[4].Value.ToString();
                 txtnombre.Text = nombre;

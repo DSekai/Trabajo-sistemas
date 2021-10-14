@@ -22,12 +22,9 @@ namespace Taller_DiseñoSistemas
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
-
             this.CenterToScreen();
 
             cargar_alumnos();
-
-
         }
 
         private void cargar_alumnos()
@@ -39,6 +36,7 @@ namespace Taller_DiseñoSistemas
             infoalumnos = datosalumnos.ConsultarAlumnos();
 
             dataGridView1.DataSource = infoalumnos;
+
         }
 
         private void cargar_alumnos2()
@@ -63,7 +61,6 @@ namespace Taller_DiseñoSistemas
             dateTimePicker1.ResetText();
             txtdirec.Clear();
             txttutor.Clear();
-
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -98,6 +95,7 @@ namespace Taller_DiseñoSistemas
         {
             try
             {
+
                 String nombre, apellido, direc, tutor, nacimiento;
                 string fila;
                 fila = dataGridView1.CurrentRow.Index.ToString();
@@ -108,12 +106,13 @@ namespace Taller_DiseñoSistemas
                 nacimiento = dataGridView1.Rows[Int32.Parse(fila)].Cells[3].Value.ToString();
                 direc = dataGridView1.Rows[Int32.Parse(fila)].Cells[4].Value.ToString();
                 tutor = dataGridView1.Rows[Int32.Parse(fila)].Cells[5].Value.ToString();
-                txtnombre.Text = nombre;
+
                 txtrut.Text = id;
+                txtnombre.Text = nombre;
                 txtapellido.Text = apellido;
+                dateTimePicker1.Value = Convert.ToDateTime(nacimiento);
                 txtdirec.Text = direc;
                 txttutor.Text = tutor;
-                //txtrut.Text = dataGridView1.Rows[Int32.Parse(fila)].Cells[0].Value.ToString();
 
             }
             catch (NullReferenceException)
@@ -170,21 +169,6 @@ namespace Taller_DiseñoSistemas
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             cargar_alumnos2();
-        }
-
-        private void bunifuPanel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuDropdown1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
