@@ -205,6 +205,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\asignaturas.cs" />
+    <Compile Include="Class\notas.cs" />
     <Compile Include="Class\profesores.cs" />
     <Compile Include="Class\alumnos.cs" />
     <Compile Include="Class\Conexion.cs" />
