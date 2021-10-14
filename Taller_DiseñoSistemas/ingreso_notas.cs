@@ -38,8 +38,8 @@ namespace Taller_DiseñoSistemas
         private void cargar_alumnos()
         {
             DataTable infonotas = new DataTable();
-            notas datosnotas = new notas(label2.Text);
-            infonotas = datosnotas.ConsultarNotas();
+            //notas datosnotas = new notas(label2.Text);
+           // infonotas = datosnotas.ConsultarNotas();
             dataGridView1.DataSource = infonotas;
         }
 
