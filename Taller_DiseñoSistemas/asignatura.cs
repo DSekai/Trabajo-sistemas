@@ -98,5 +98,11 @@ namespace Taller_DiseñoSistemas
         {
             cargar_asignatura2();
         }
+
+        private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dataGridView1.ClearSelection();
+            limpiar();
+        }
     }
 }

@@ -53,6 +53,17 @@ namespace Taller_DiseñoSistemas
             dataGridView1.DataSource = infoprofesor;
         }
 
+        /*private void cargar_asignatura()
+        {
+            
+            DataTable infoasignatura = new DataTable();
+
+            asignaturas datosasignatura = new asignaturas();
+
+            infoasignatura = datosasignatura.ConsultarAsignaturas3();
+
+        }*/
+
         private void limpiar()
         {
             txtrut.Clear();
@@ -95,8 +106,9 @@ namespace Taller_DiseñoSistemas
         {
             try
             {
-                String nombre, apellido, direc, cargo;
-                string fila;
+                String nombre, apellido, direc, cargo, fila, nombre_asig;
+                String id_asig;
+
                 fila = dataGridView1.CurrentRow.Index.ToString();
 
                 id = dataGridView1.Rows[Int32.Parse(fila)].Cells[0].Value.ToString();
@@ -104,6 +116,17 @@ namespace Taller_DiseñoSistemas
                 apellido = dataGridView1.Rows[Int32.Parse(fila)].Cells[2].Value.ToString();
                 direc = dataGridView1.Rows[Int32.Parse(fila)].Cells[3].Value.ToString();
                 cargo = dataGridView1.Rows[Int32.Parse(fila)].Cells[4].Value.ToString();
+
+                //llenado de combobox
+                id_asig = dataGridView1.Rows[Int32.Parse(fila)].Cells[5].Value.ToString();
+
+                DataTable infoasignatura = new DataTable();
+                asignaturas datosasignatura = new asignaturas(id_asig);
+                infoasignatura = datosasignatura.ConsultarAsignaturas3();
+                nombre_asig = infoasignatura.Rows[0]["nombre"].ToString();
+                comboBox1.Text = nombre_asig;
+                
+
                 txtnombre.Text = nombre;
                 txtrut.Text = id;
                 txtapellido.Text = apellido;
@@ -165,6 +188,12 @@ namespace Taller_DiseñoSistemas
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             cargar_profesores2();
+        }
+
+        private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dataGridView1.ClearSelection();
+            limpiar();
         }
     }
 }
