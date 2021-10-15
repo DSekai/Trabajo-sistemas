@@ -102,5 +102,10 @@ namespace Taller_DiseñoSistemas
                 //MessageBox.Show("Seleccione fila correcta");
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
