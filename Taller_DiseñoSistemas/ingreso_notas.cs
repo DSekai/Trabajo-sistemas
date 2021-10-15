@@ -38,8 +38,8 @@ namespace Taller_DiseñoSistemas
         private void cargar_alumnos()
         {
             DataTable infonotas = new DataTable();
-            //notas datosnotas = new notas(label2.Text);
-           // infonotas = datosnotas.ConsultarNotas();
+            notas datosnotas = new notas(label2.Text);
+            infonotas = datosnotas.ConsultarNotas();
             dataGridView1.DataSource = infonotas;
         }
 
@@ -54,6 +54,8 @@ namespace Taller_DiseñoSistemas
 
         private void ingreso_notas_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'gestion_notasDataSetnotasramos.asignatura' Puede moverla o quitarla según sea necesario.
+            this.asignaturaTableAdapter.Fill(this.gestion_notasDataSetnotasramos.asignatura);
             // TODO: esta línea de código carga datos en la tabla 'gestion_notasDataSet8.asignatura' Puede moverla o quitarla según sea necesario.
 
             this.CenterToScreen();

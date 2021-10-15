@@ -221,6 +221,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>gestion_notasDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="gestion_notasDataSetnotasramos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestion_notasDataSetnotasramos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Ingreso_Profesor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,6 +332,17 @@
     </None>
     <None Include="gestion_notasDataSet.xss">
       <DependentUpon>gestion_notasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_notasDataSetnotasramos.xsc">
+      <DependentUpon>gestion_notasDataSetnotasramos.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_notasDataSetnotasramos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestion_notasDataSetnotasramos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestion_notasDataSetnotasramos.xss">
+      <DependentUpon>gestion_notasDataSetnotasramos.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
