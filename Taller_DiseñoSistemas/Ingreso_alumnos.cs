@@ -22,6 +22,8 @@ namespace Taller_DiseñoSistemas
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'gestion_notasDataSet1.curso' Puede moverla o quitarla según sea necesario.
+            this.cursoTableAdapter.Fill(this.gestion_notasDataSet1.curso);
             this.CenterToScreen();
 
             cargar_alumnos();
@@ -78,8 +80,9 @@ namespace Taller_DiseñoSistemas
                 String nacimiento = dateTimePicker1.Value.ToString("dd-MM-yyyy");
                 String direccion = txtdirec.Text;
                 String tutor = txttutor.Text;
+                int curso = Convert.ToInt32(comboBox1.SelectedValue);
 
-                alumnos a = new alumnos(rut, nombre, apellido, nacimiento, direccion, tutor);
+                alumnos a = new alumnos(rut, nombre, apellido, nacimiento, direccion, tutor, curso);
 
                 a.ingresar_alumno();
 
@@ -155,8 +158,9 @@ namespace Taller_DiseñoSistemas
                 String nacimiento = dateTimePicker1.Value.ToString("dd-MM-yyyy");
                 String direccion = txtdirec.Text;
                 String tutor = txttutor.Text;
+                int curso = Convert.ToInt32(comboBox1.SelectedValue);
 
-                alumnos a = new alumnos(rut, nombre, apellido, nacimiento, direccion, tutor);
+                alumnos a = new alumnos(rut, nombre, apellido, nacimiento, direccion, tutor, curso);
 
                 a.modificar_alumno();
 

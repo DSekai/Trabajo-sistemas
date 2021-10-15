@@ -204,6 +204,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\cursos.cs" />
+    <Compile Include="curso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="curso.Designer.cs">
+      <DependentUpon>curso.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class\anotaciones.cs" />
     <Compile Include="Class\asignaturas.cs" />
     <Compile Include="Class\asistencia.cs" />
@@ -222,6 +229,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>gestion_notasDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_notasDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestion_notasDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="gestion_notasDataSetnotasramos.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -284,6 +296,9 @@
     <Compile Include="Registro_asistencia.Designer.cs">
       <DependentUpon>Registro_asistencia.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="curso.resx">
+      <DependentUpon>curso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="asignatura.resx">
       <DependentUpon>asignatura.cs</DependentUpon>
     </EmbeddedResource>
@@ -334,6 +349,17 @@
     </None>
     <None Include="gestion_notasDataSet.xss">
       <DependentUpon>gestion_notasDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_notasDataSet1.xsc">
+      <DependentUpon>gestion_notasDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_notasDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestion_notasDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestion_notasDataSet1.xss">
+      <DependentUpon>gestion_notasDataSet1.xsd</DependentUpon>
     </None>
     <None Include="gestion_notasDataSetnotasramos.xsc">
       <DependentUpon>gestion_notasDataSetnotasramos.xsd</DependentUpon>

@@ -15,6 +15,7 @@ namespace Taller_DiseñoSistemas.Class
         private String nacimiento;
         private String direccion;
         private String tutor;
+        private int curso;
 
         private String rut2;
 
@@ -23,7 +24,7 @@ namespace Taller_DiseñoSistemas.Class
 
 
         public alumnos(String _rut, String _nombre, String _apellido, String _nacimiento,
-            String _direccion, String _tutor)
+            String _direccion, String _tutor, int _curso)
         {
             this.rut = _rut;
             this.nombre = _nombre;
@@ -31,6 +32,7 @@ namespace Taller_DiseñoSistemas.Class
             this.nacimiento = _nacimiento;
             this.direccion = _direccion;
             this.tutor = _tutor;
+            this.curso = _curso;
 
         }
         public alumnos(String _rut2)
@@ -44,8 +46,8 @@ namespace Taller_DiseñoSistemas.Class
         {
             Conexion connect = new Conexion();
 
-            String query = String.Format("call sp_ingresar_alumno('{0}','{1}','{2}','{3}','{4}','{5}');",
-                this.rut, this.nombre, this.apellido, this.nacimiento, this.direccion, this.tutor);
+            String query = String.Format("call sp_ingresar_alumno('{0}','{1}','{2}','{3}','{4}','{5}','{6}');",
+                this.rut, this.nombre, this.apellido, this.nacimiento, this.direccion, this.tutor, this.curso);
 
             connect.setQuery(query);
 
@@ -87,8 +89,8 @@ namespace Taller_DiseñoSistemas.Class
         {
             Conexion connect = new Conexion();
 
-            String query = String.Format("call sp_modificaralumno('{0}','{1}','{2}','{3}','{4}','{5}');",
-                this.rut, this.nombre, this.apellido, this.nacimiento, this.direccion, this.tutor);
+            String query = String.Format("call sp_modificaralumno('{0}','{1}','{2}','{3}','{4}','{5}','{6}');",
+                this.rut, this.nombre, this.apellido, this.nacimiento, this.direccion, this.tutor, this.curso);
 
             connect.setQuery(query);
 

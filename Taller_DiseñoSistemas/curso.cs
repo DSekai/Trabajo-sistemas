@@ -13,9 +13,9 @@ using Taller_DiseñoSistemas.Class;
 
 namespace Taller_DiseñoSistemas
 {
-    public partial class asignatura : Form
+    public partial class curso : Form
     {
-        public asignatura()
+        public curso()
         {
             InitializeComponent();
         }
@@ -24,31 +24,32 @@ namespace Taller_DiseñoSistemas
         {
             this.CenterToScreen();
 
-            cargar_asignatura();
+            cargar_curso();
         }
 
-        private void cargar_asignatura()
+        private void cargar_curso()
         {
-            DataTable infoasignatura = new DataTable();
+            DataTable infocurso = new DataTable();
 
-            asignaturas datosasignatura = new asignaturas();
+            cursos datoscurso = new cursos();
 
-            infoasignatura = datosasignatura.ConsultarAsignaturas();
+            infocurso = datoscurso.Consultarcurso();
 
-            dataGridView1.DataSource = infoasignatura;
+            dataGridView1.DataSource = infocurso;
         }
 
-        private void cargar_asignatura2()
+        private void cargar_curso2()
         {
             String nombre = txtbuscar.Text;
 
-            DataTable infoasignatura = new DataTable();
+            DataTable infocurso = new DataTable();
 
-            asignaturas datosasignatura = new asignaturas(nombre);
+            cursos datoscurso = new cursos(nombre);
 
-            infoasignatura = datosasignatura.ConsultarAsignaturas2();
+            infocurso = datoscurso.Consultarcurso2();
 
-            dataGridView1.DataSource = infoasignatura;
+            dataGridView1.DataSource = infocurso;
+
         }
 
         private void limpiar()
@@ -67,14 +68,13 @@ namespace Taller_DiseñoSistemas
             {
                 String nombre = txtnombre.Text;
 
-                asignaturas a = new asignaturas(nombre);
+                cursos c = new cursos(nombre);
 
-
-                a.ingresar_asignatura();
+                c.ingresar_curso();
 
                 limpiar();
 
-                cargar_asignatura();
+                cargar_curso();
 
             }
         }
@@ -96,7 +96,7 @@ namespace Taller_DiseñoSistemas
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            cargar_asignatura2();
+            cargar_curso2();
         }
 
         private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)

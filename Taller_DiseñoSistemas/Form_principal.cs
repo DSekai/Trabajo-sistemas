@@ -118,5 +118,10 @@ namespace Taller_DiseñoSistemas
         {
             AbrirForm(new asignatura());
         }
+
+        private void bunifuButton26_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new curso());
+        }
     }
 }
