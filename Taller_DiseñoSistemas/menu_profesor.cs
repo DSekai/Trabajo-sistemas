@@ -71,5 +71,10 @@ namespace Taller_DiseñoSistemas
         {
             AbrirForm(new ingreso_notas());
         }
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new Registro_asistencia());
+        }
     }
 }
