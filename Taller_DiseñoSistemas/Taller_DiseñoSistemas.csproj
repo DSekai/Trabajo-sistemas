@@ -204,7 +204,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\anotaciones.cs" />
     <Compile Include="Class\asignaturas.cs" />
+    <Compile Include="Class\asistencia.cs" />
     <Compile Include="Class\notas.cs" />
     <Compile Include="Class\profesores.cs" />
     <Compile Include="Class\alumnos.cs" />
