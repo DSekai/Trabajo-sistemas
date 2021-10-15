@@ -37,28 +37,25 @@ namespace Taller_DiseñoSistemas
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.label7 = new System.Windows.Forms.Label();
-            this.bunifuDropdown1 = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.combo_curso = new Bunifu.UI.WinForms.BunifuDropdown();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtrut = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtapellido = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtnombre = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.rd_negativo = new System.Windows.Forms.RadioButton();
+            this.rd_positivo = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
             this.button1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_detalle = new System.Windows.Forms.TextBox();
+            this.DataTable1 = new System.Windows.Forms.DataGridView();
+            this.txt_rut = new System.Windows.Forms.TextBox();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTable1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuPanel1
@@ -89,61 +86,61 @@ namespace Taller_DiseñoSistemas
             this.label7.TabIndex = 0;
             this.label7.Text = "Anotaciones de Alumnos";
             // 
-            // bunifuDropdown1
+            // combo_curso
             // 
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown1.BackgroundColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuDropdown1.BorderRadius = 1;
-            this.bunifuDropdown1.Color = System.Drawing.Color.Silver;
-            this.bunifuDropdown1.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.bunifuDropdown1.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.bunifuDropdown1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuDropdown1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.bunifuDropdown1.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.bunifuDropdown1.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.bunifuDropdown1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.bunifuDropdown1.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.bunifuDropdown1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.bunifuDropdown1.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.bunifuDropdown1.FillDropDown = true;
-            this.bunifuDropdown1.FillIndicator = false;
-            this.bunifuDropdown1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bunifuDropdown1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.Black;
-            this.bunifuDropdown1.FormattingEnabled = true;
-            this.bunifuDropdown1.Icon = null;
-            this.bunifuDropdown1.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.bunifuDropdown1.IndicatorColor = System.Drawing.Color.DarkGray;
-            this.bunifuDropdown1.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.bunifuDropdown1.IndicatorThickness = 2;
-            this.bunifuDropdown1.IsDropdownOpened = false;
-            this.bunifuDropdown1.ItemBackColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.ItemBorderColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.ItemForeColor = System.Drawing.Color.Black;
-            this.bunifuDropdown1.ItemHeight = 26;
-            this.bunifuDropdown1.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.bunifuDropdown1.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.Items.AddRange(new object[] {
+            this.combo_curso.BackColor = System.Drawing.Color.Transparent;
+            this.combo_curso.BackgroundColor = System.Drawing.Color.White;
+            this.combo_curso.BorderColor = System.Drawing.Color.Silver;
+            this.combo_curso.BorderRadius = 1;
+            this.combo_curso.Color = System.Drawing.Color.Silver;
+            this.combo_curso.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.combo_curso.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.combo_curso.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.combo_curso.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.combo_curso.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.combo_curso.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.combo_curso.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combo_curso.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.combo_curso.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_curso.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.combo_curso.FillDropDown = true;
+            this.combo_curso.FillIndicator = false;
+            this.combo_curso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.combo_curso.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.combo_curso.ForeColor = System.Drawing.Color.Black;
+            this.combo_curso.FormattingEnabled = true;
+            this.combo_curso.Icon = null;
+            this.combo_curso.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.combo_curso.IndicatorColor = System.Drawing.Color.DarkGray;
+            this.combo_curso.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.combo_curso.IndicatorThickness = 2;
+            this.combo_curso.IsDropdownOpened = false;
+            this.combo_curso.ItemBackColor = System.Drawing.Color.White;
+            this.combo_curso.ItemBorderColor = System.Drawing.Color.White;
+            this.combo_curso.ItemForeColor = System.Drawing.Color.Black;
+            this.combo_curso.ItemHeight = 26;
+            this.combo_curso.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.combo_curso.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.combo_curso.Items.AddRange(new object[] {
             "rut",
             "nombre",
             "apellido",
             "nacimiento",
             "direccion",
             "tutor"});
-            this.bunifuDropdown1.ItemTopMargin = 3;
-            this.bunifuDropdown1.Location = new System.Drawing.Point(230, 21);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.Size = new System.Drawing.Size(139, 32);
-            this.bunifuDropdown1.TabIndex = 30;
-            this.bunifuDropdown1.Text = null;
-            this.bunifuDropdown1.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.bunifuDropdown1.TextLeftMargin = 5;
+            this.combo_curso.ItemTopMargin = 3;
+            this.combo_curso.Location = new System.Drawing.Point(229, 8);
+            this.combo_curso.Name = "combo_curso";
+            this.combo_curso.Size = new System.Drawing.Size(139, 32);
+            this.combo_curso.TabIndex = 30;
+            this.combo_curso.Text = null;
+            this.combo_curso.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.combo_curso.TextLeftMargin = 5;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 8);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(33, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,7 +175,7 @@ namespace Taller_DiseñoSistemas
             this.bunifuTextBox1.IconRight = null;
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(51, 21);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(50, 8);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
@@ -225,69 +222,43 @@ namespace Taller_DiseñoSistemas
             this.bunifuTextBox1.UseSystemPasswordChar = false;
             this.bunifuTextBox1.WordWrap = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 122);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 13);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Rut:";
-            // 
-            // txtrut
-            // 
-            this.txtrut.Location = new System.Drawing.Point(138, 115);
-            this.txtrut.Name = "txtrut";
-            this.txtrut.Size = new System.Drawing.Size(192, 20);
-            this.txtrut.TabIndex = 32;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Location = new System.Drawing.Point(25, 112);
+            this.panel1.Controls.Add(this.rd_negativo);
+            this.panel1.Controls.Add(this.rd_positivo);
+            this.panel1.Controls.Add(this.txt_detalle);
+            this.panel1.Location = new System.Drawing.Point(25, 75);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(433, 303);
             this.panel1.TabIndex = 34;
             // 
-            // txtapellido
+            // rd_negativo
             // 
-            this.txtapellido.Location = new System.Drawing.Point(138, 167);
-            this.txtapellido.Name = "txtapellido";
-            this.txtapellido.Size = new System.Drawing.Size(193, 20);
-            this.txtapellido.TabIndex = 40;
+            this.rd_negativo.AutoSize = true;
+            this.rd_negativo.Location = new System.Drawing.Point(242, 18);
+            this.rd_negativo.Name = "rd_negativo";
+            this.rd_negativo.Size = new System.Drawing.Size(79, 17);
+            this.rd_negativo.TabIndex = 36;
+            this.rd_negativo.TabStop = true;
+            this.rd_negativo.Text = "NEGATIVA";
+            this.rd_negativo.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // rd_positivo
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(68, 148);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 13);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "Nombre:";
-            // 
-            // txtnombre
-            // 
-            this.txtnombre.Location = new System.Drawing.Point(138, 141);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(192, 20);
-            this.txtnombre.TabIndex = 39;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(68, 174);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
-            this.label3.TabIndex = 36;
-            this.label3.Text = "Apellido:";
+            this.rd_positivo.AutoSize = true;
+            this.rd_positivo.Location = new System.Drawing.Point(76, 18);
+            this.rd_positivo.Name = "rd_positivo";
+            this.rd_positivo.Size = new System.Drawing.Size(77, 17);
+            this.rd_positivo.TabIndex = 35;
+            this.rd_positivo.TabStop = true;
+            this.rd_positivo.Text = "POSITIVIA";
+            this.rd_positivo.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(68, 200);
+            this.label4.Location = new System.Drawing.Point(67, 62);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 37;
@@ -296,74 +267,27 @@ namespace Taller_DiseñoSistemas
             // dateTimePicker1
             // 
             this.dateTimePicker1.CustomFormat = "";
-            this.dateTimePicker1.Location = new System.Drawing.Point(138, 193);
+            this.dateTimePicker1.Location = new System.Drawing.Point(137, 55);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(192, 20);
             this.dateTimePicker1.TabIndex = 38;
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox1.Location = new System.Drawing.Point(13, 47);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(407, 240);
-            this.textBox1.TabIndex = 34;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(76, 18);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(77, 17);
-            this.radioButton1.TabIndex = 35;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "POSITIVIA";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(242, 18);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(79, 17);
-            this.radioButton2.TabIndex = 36;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "NEGATIVA";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.txt_rut);
+            this.panel2.Controls.Add(this.DataTable1);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.txtrut);
-            this.panel2.Controls.Add(this.txtapellido);
-            this.panel2.Controls.Add(this.bunifuDropdown1);
+            this.panel2.Controls.Add(this.combo_curso);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.bunifuTextBox1);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.txtnombre);
             this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(495, 44);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(399, 383);
             this.panel2.TabIndex = 41;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(20, 65);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(335, 25);
-            this.label9.TabIndex = 54;
-            this.label9.Text = "REGISTRO DE ANOTACIONES";
             // 
             // button1
             // 
@@ -414,7 +338,7 @@ namespace Taller_DiseñoSistemas
             this.button1.IdleIconLeftImage = null;
             this.button1.IdleIconRightImage = null;
             this.button1.IndicateFocus = false;
-            this.button1.Location = new System.Drawing.Point(71, 262);
+            this.button1.Location = new System.Drawing.Point(70, 249);
             this.button1.Name = "button1";
             this.button1.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.button1.OnDisabledState.BorderRadius = 1;
@@ -455,6 +379,43 @@ namespace Taller_DiseñoSistemas
             this.button1.TextMarginLeft = 0;
             this.button1.TextPadding = new System.Windows.Forms.Padding(0);
             this.button1.UseDefaultRadiusAndThickness = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(20, 47);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(335, 25);
+            this.label9.TabIndex = 54;
+            this.label9.Text = "REGISTRO DE ANOTACIONES";
+            // 
+            // txt_detalle
+            // 
+            this.txt_detalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txt_detalle.Location = new System.Drawing.Point(13, 41);
+            this.txt_detalle.Multiline = true;
+            this.txt_detalle.Name = "txt_detalle";
+            this.txt_detalle.Size = new System.Drawing.Size(407, 240);
+            this.txt_detalle.TabIndex = 34;
+            // 
+            // DataTable1
+            // 
+            this.DataTable1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataTable1.Location = new System.Drawing.Point(79, 81);
+            this.DataTable1.Name = "DataTable1";
+            this.DataTable1.Size = new System.Drawing.Size(240, 150);
+            this.DataTable1.TabIndex = 45;
+            // 
+            // txt_rut
+            // 
+            this.txt_rut.Location = new System.Drawing.Point(50, 293);
+            this.txt_rut.Name = "txt_rut";
+            this.txt_rut.Size = new System.Drawing.Size(100, 20);
+            this.txt_rut.TabIndex = 46;
             // 
             // registro_anotaciones
             // 
@@ -476,6 +437,7 @@ namespace Taller_DiseñoSistemas
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataTable1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -485,23 +447,19 @@ namespace Taller_DiseñoSistemas
 
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private System.Windows.Forms.Label label7;
-        private Bunifu.UI.WinForms.BunifuDropdown bunifuDropdown1;
+        private Bunifu.UI.WinForms.BunifuDropdown combo_curso;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtrut;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtapellido;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtnombre;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rd_negativo;
+        private System.Windows.Forms.RadioButton rd_positivo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label9;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton button1;
+        private System.Windows.Forms.TextBox txt_detalle;
+        private System.Windows.Forms.TextBox txt_rut;
+        private System.Windows.Forms.DataGridView DataTable1;
     }
 }

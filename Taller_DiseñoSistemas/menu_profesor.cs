@@ -58,7 +58,7 @@ namespace Taller_DiseñoSistemas
 
         private void bunifuButton24_Click(object sender, EventArgs e)
         {
-
+            AbrirForm(new registro_anotaciones());
         }
 
         private void menu_profesor_Load(object sender, EventArgs e)
